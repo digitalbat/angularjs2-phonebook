@@ -1,0 +1,13 @@
+{{diagnostic}}
+<div [hidden]="submitted">
+  <form #scheduleForm="ngForm">
+
+    <div class="form-group">
+      <input type="text" placeholder="name" #nameInput class="form-control" id="name" required name="name">
+    </div>
+    <div class="form-group">
+      <input type="text" placeholder="phone" #phoneInput class="form-control" id="phone" required name="phone">
+    </div>
+    <button type="button" (click)="submitForm(nameInput.value, phoneInput.value)" class="btn btn-default" routerLink="/" routerLinkActive="active">SUBMIT</button>
+  </form>
+</div>

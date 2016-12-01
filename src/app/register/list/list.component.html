@@ -1,0 +1,14 @@
+<input [(ngModel)]="datasearch" class="form-control" type="text" placeholder="Who are you looking for?" />
+
+<table class="table table-striped">
+	<tr>
+		<th>Name</th>
+		<th>Phone</th>
+	</tr>
+	<tr *ngFor="let user of users | search:datasearch">
+		<td class="left">{{user.name}}</td>
+		<td>{{user.phone}}</td>
+	</tr>
+</table>
+<br>
+<a class="btn btn-primary btn-block" routerLink="/new" routerLinkActive="active">New</a>
