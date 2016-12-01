@@ -1,0 +1,60 @@
+table {
+  margin-top: 40px;
+  border: black;
+}
+
+hr {
+  border-color: #999;
+}
+
+th, td {
+  border: 1px;
+  text-align: left;
+  width: 50%;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td {
+   background-color: #3f362f;
+ }
+
+ .table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #000;
+ }
+
+.left{
+  text-align: left;
+}
+/*.btn-block{
+  background-color: #4fa05d;
+}*/
+
+.btn-block:hover{
+  background-color: orange;
+}
+
+a{
+  color: #fff;
+}
+
+
+.form-control {
+  margin-bottom: 5px;
+}
+
+
+.ribbon {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  width: 20px;
+  height: 40px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #EEE transparent;
+  cursor: pointer;
+  background-color: #EE0000;
+}
+
+.ribbon:hover {
+  height: 41px;
+}
